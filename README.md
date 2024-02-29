@@ -1,4 +1,4 @@
-# Get input from customer
+#Call the names, prices, and quantities of the items
 firstItem = "coffee"
 secondItem = "muffin"
 thirdItem = "tea"
@@ -13,6 +13,7 @@ priceTea = 6
 priceCookies = 3
 priceTax = 0.78
 
+#Ask the customer questions on what they are ordering (suggested answers are printed)
 print('What are you purchasing today?')
 nameOfFirstItem = input("Enter the name of the first item (default: coffee): ") or firstItem
 nameOfSecondItem = input("Enter the name of the second item (default: muffin): ") or secondItem
@@ -28,11 +29,11 @@ priceOfThirdItem = float(input("Enter the price of the third item (default: 6): 
 priceOfFourthItem = float(input("Enter the price of the fourth item (default: 3): ") or priceCookies)
 priceOfTax = float(input("Enter the tax amount (default: 0.78): ") or priceTax)
 
-# Calculate total cost
+#Calculate the total cost of the items
 totalCost = (numberOfCoffeesPurchased * priceOfFirstItem) + (numberOfMuffinsPurchased * priceOfSecondItem) + (numberOfTeaPurchased * priceOfThirdItem) + (numberOfCookiesPurchased * priceOfFourthItem)
 totalCostWithTax = totalCost + priceTax
 
-# Display the receipt
+#Display the receipt
 print('**************************')
 print('My Coffee and Muffin Shop')
 print('Number of Coffees Bought:', numberOfCoffeesPurchased)
